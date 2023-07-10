@@ -352,7 +352,7 @@
   position: relative;
   overflow: hidden;
   list-style: none;
- padding: 0px 40px 0px 0px;
+  padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
 }
@@ -839,7 +839,7 @@ padding: 15px;
   display: flex;
   background-color: rgb(255, 255, 255);
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   height: 100%;
   gap: 1.25rem;
   padding-left: 1.875rem;
@@ -909,7 +909,7 @@ padding: 15px;
   object-fit: cover;
 }
 
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .header {
     display: none;
   }
@@ -918,6 +918,18 @@ padding: 15px;
 @media (max-width: 1590px) {
   .header-church__container {
     max-width: 1344px;
+  }
+}
+@media (max-width: 1344px) {
+  .header-church__container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .header-church__container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 }
 
@@ -929,11 +941,23 @@ padding: 15px;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+@media (max-width: 1160px) {
+  .header-church__body {
+    flex-direction: column;
+  }
+}
 
 .header-church__menu {
   display: flex;
   justify-content: flex-start;
   gap: 2.5rem;
+}
+@media (max-width: 1160px) {
+  .header-church__menu {
+    gap: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header-church__logo {
@@ -944,6 +968,12 @@ padding: 15px;
   display: flex;
   justify-content: flex-start;
   gap: 2.5rem;
+}
+@media (max-width: 1160px) {
+  .header-church__nav {
+    gap: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
 }
 
 .header-church__button {
