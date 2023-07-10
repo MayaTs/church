@@ -769,6 +769,7 @@ body.lock {
   position: relative;
   height: 60px;
   padding: 15px;
+  margin-top: 0.3125rem;
 }
 
 .menu {
@@ -778,6 +779,8 @@ body.lock {
   position: relative;
   height: 60px;
   padding: 15px;
+  background-color: white;
+  margin-top: 0.3125rem;
 }
 
 .nav {
@@ -858,6 +861,12 @@ padding: 15px;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 61.99875em) {
+  .full-screen {
+    min-height: 50vh;
+  }
+}
+
 .full-screen__body {
   position: relative;
   z-index: 2;
@@ -921,6 +930,7 @@ padding: 15px;
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
+    height: 50vh;
   }
 }
 
