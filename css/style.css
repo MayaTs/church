@@ -352,7 +352,7 @@
   position: relative;
   overflow: hidden;
   list-style: none;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 50px 0px 0px;
   /* Fix of Webkit flickering */
   z-index: 1;
 }
